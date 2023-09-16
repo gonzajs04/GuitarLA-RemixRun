@@ -43,11 +43,10 @@
      
 }
 
-.producto-square-det{
-    .nombre{
-        font-weight: 600;
-        font-size: 4.2rem;
-    }
+
+.producto-square-det .nombre{
+    font-weight: 600;
+    font-size: 4.2rem;
 }
 .producto p{
     margin: 0 0 1rem 0;
@@ -85,8 +84,10 @@
     position: absolute;
     top: 0;
     right:0;
-    &:hover{
-        cursor: pointer;
-        color: rgb(189, 8, 8);
-    }
+   
+}
+.btn-delete-gui:hover{
+    cursor: pointer;
+    color: rgb(189, 8, 8);
+
 }

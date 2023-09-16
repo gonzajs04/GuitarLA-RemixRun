@@ -146,11 +146,9 @@
   color: var(--primary);
  }
 
- .footer{
-  .navegacion a:last-of-type{
-    display: none;
-  }
- }
+.footer .navegacion a:last-of-type{
+  display: none;
+}
 
 
 .error, .error-enlace{

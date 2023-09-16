@@ -10,7 +10,7 @@ import {
 import styles from "../app/styles/index.css";
 import Header from "./components/Header.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
-import Footer from "./components/footer.jsx";
+import Footer from "./components/Footer.jsx";
 import {useState,useEffect} from 'react';
 
 export const meta = () => {
