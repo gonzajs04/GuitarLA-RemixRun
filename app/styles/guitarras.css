@@ -1,0 +1,83 @@
+/*guitarras*/
+.guitarras-grid{
+    display: grid;
+    gap: 4rem;
+   
+  }
+  @media(min-width:768px){
+   .guitarras-grid{
+   grid-template-columns:repeat(2,1fr) ;
+   }
+  }
+  
+  @media(min-width:992px){
+    .guitarras-grid{
+    grid-template-columns:repeat(3,1fr) ;
+    }
+   }
+  
+  
+   .guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    max-width: 70rem;
+    margin: 0 auto;
+   }
+
+   .guitarra .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical /*LA DESCRIPCION SE CORTARA VERTICALMENTE*/;
+    -webkit-line-clamp: 10 /*LA DESCRIPCION SE CORTARA LUEGO DE 4 RENGLONES*/;
+    min-height: 120px;
+    overflow-y: hidden;
+   }
+   .guitarra .contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--primary);
+   }
+   .guitarra .precio{
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+   }
+  
+   .contenido{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   }
+
+   .formulario{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .formulario label{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+   }
+   .formulario select{
+    text-align: center;
+    padding: .6rem;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+
+   }
+   .formulario input[type="submit"]{
+    margin-top: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1.4rem;
+    border: none;
+    transition: all .5s ease-in-out;
+   }
+   .formulario input[type="submit"]:hover{
+      cursor: pointer;
+      background-color: #fafafa;
+      color: var(--black);
+      border: 1px solid var(--black);
+   }

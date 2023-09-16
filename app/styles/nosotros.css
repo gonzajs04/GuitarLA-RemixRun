@@ -1,0 +1,14 @@
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5rem;
+  }
+  .contenido img{
+    border-radius: 10px;
+  }
+   .contenido p{
+    color: var(--black);
+    line-height: 2.7rem;
+    font-size: 1.9rem;
+    margin: 0;
+   }

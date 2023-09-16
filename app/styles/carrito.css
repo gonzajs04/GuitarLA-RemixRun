@@ -1,0 +1,92 @@
+.contenido{
+    display: grid;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+@media(width>=768px){
+    .contenido{
+            grid-template-columns: 3fr 2fr;
+    }
+}
+.producto{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    position: relative;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.resumen{
+    background-color: #F9FAFB;
+    padding: 3rem;
+    border-radius: 1px;
+    position: sticky;
+   
+}
+.container-carrito{
+    max-height: 100%;
+    overflow-y: hidden;
+}
+.carrito{
+    padding: 0rem 3rem;
+    max-height: 700px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: 5px;  
+   
+}
+.carrito::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+     
+}
+
+.producto-square-det{
+    .nombre{
+        font-weight: 600;
+        font-size: 4.2rem;
+    }
+}
+.producto p{
+    margin: 0 0 1rem 0;
+}
+.producto .precio{
+    font-weight: 700;
+    margin-top: 2rem;
+    color: var(--primary);
+}
+.subtotal{
+    font-weight: 600;
+}
+
+.producto span{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.producto:last-of-type{
+    border-bottom: none;
+}
+.select{
+    all:unset; /*ELIMINAR TODO EL CSS*/
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1px;
+}
+
+.btn-delete-gui{
+    all: unset;
+    border: none;
+    color: rgb(240, 1, 1);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right:0;
+    &:hover{
+        cursor: pointer;
+        color: rgb(189, 8, 8);
+    }
+}
