@@ -1,58 +1,17 @@
-# Welcome to Remix!
+# Bienvenido a GuitarLA
 
-- [Remix Docs](https://remix.run/docs)
+GuitarLA fue desarrollada con RemixRun(framework de React Server Side Rendering). Remix run es esencial para el facil ruteo de aplicaciones, hojas de estilo especificas para componentes para no sobrecargar la aplicacion, excelente manejo de consumo para las API'S, cargando estas del lado del servidor, para aliviar la carga al cliente. La API fue desarollada con Strapi, el cual es un CMS moderno que facilita el desarrollo de las RESTApi.
+Asimismo la API fue publicada en render, para el consumo posterior de la misma en REMIX.
 
-## Development
 
-From your terminal:
+##  Descarga y Posibles problemas
+Descargar el proyecto en caso de que no funcione el link de deploy.
+Abrirlo en tu IDE preferido.
 
-```sh
-npm run dev
-```
+## Variables de entorno
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Ejecucion
 
-## Deployment
 
-First, build your app for production:
 
-```sh
-npm run build
-```
 
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over relevant code/assets from your current app to the new project that's pre-configured for your target server.
-
-Most importantly, this means everything in the `app/` directory, but if you've further customized your current application outside of there it may also include:
-
-- Any assets you've added/updated in `public/`
-- Any updated versions of root files such as `.eslintrc.js`, etc.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
